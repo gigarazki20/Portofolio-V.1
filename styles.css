@@ -1,0 +1,413 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    background-color: black;
+    justify-content: space-around;
+    padding: 10px 0;
+   align-items: center;
+   color: white;
+   width: 100vw;
+   overflow: hidden;
+   line-height: 50px;
+}
+
+img {
+    display: flex;
+    height: 40px;
+    padding: 10px 0;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    width: 35%;
+    justify-content: space-between;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+nav ul li:hover{
+    background:rgb(255, 0, 0);
+    text-align: center;
+    border-radius: 100px;
+    padding-left: 10px;
+    width: 30%;
+}
+
+nav ul li:hover a{
+     color:rgb(255, 255, 255);
+}
+
+
+
+
+
+/* Responsive Breakpoint */ 
+
+/* ukuran Tablet */
+@media screen and (max-width: 768px) {
+nav ul {
+    width: 50%;
+}
+
+section {
+    flex-direction: column;
+    align-items: center;
+}
+.profile {
+    margin-top: 10px;
+    margin-bottom: -200px;
+}
+.deskripsi{
+    text-align: center;
+}
+
+.about-experience{
+    display: block;
+    height: 30%;
+    margin-left: 500px;
+    padding-left: 270px;
+    justify-content: space-between;
+}
+.experience-1 {
+    display: block;
+    height: 30%;
+    margin-left: -10px;
+    margin-right: 400px;
+    padding-right: 500px;
+    justify-content: space-around;
+}
+.Posisi-jabatan {
+    display: block;
+    height: 20%;
+    margin-left: -100px;
+    margin-right: 200px;
+    padding-right: 50px;
+}
+.Posisi-jabatan .status{
+    display: block;
+    height: 20%;
+    margin-left: 550px;
+    padding-right: 80px;
+}
+
+.institusi {
+    display: block;
+    height: 20%;
+    margin-left: -100px;
+    margin-right: 200px;
+    padding-right: 50px;
+}
+
+.institusi .date{
+    display: block;
+    height: 20%;
+    margin-left: 550px;
+    padding-right: 80px;
+}
+
+
+}
+
+/* Ukuran Mobile */
+
+@media  screen and (max-width: 576px) {
+    
+   
+    section {
+        flex-direction: column;
+        align-items: center;
+        
+    }
+   
+    .kolom{
+        text-align: center;
+        margin-right: 10px;
+    }
+
+    .profile {
+        margin-top: 10px;
+        margin-bottom: -200px;
+    }
+    .deskripsi {
+        height: 30px;
+        font-size: 10px;
+    }
+    .about-experience{
+        display: block;
+        height: 30%;
+        margin-left: 100px;
+        padding-left: 170px;
+        justify-content: space-between;
+    }
+    .experience-1 {
+        display: block;
+        height: 30%;
+        margin-left: -10px;
+        margin-right: 400px;
+        padding-right: 500px;
+        padding-left: 80px;
+        justify-content: space-between;
+    }
+    .Posisi-jabatan {
+        display: block;
+        height: 20%;
+        margin-left: -100px;
+        margin-right: 200px;
+        padding-right: 50px;
+    }
+    .Posisi-jabatan .status{
+        display: block;
+        height: 20%;
+        margin-left: 340px;
+        padding-right: 80px;
+    }
+    
+    .institusi {
+        display: block;
+        height: 20%;
+        margin-left: -100px;
+        margin-right: 200px;
+        padding-right: 50px;
+    }
+    .institusi .date{
+        display: block;
+        height: 20%;
+        margin-left: 350px;
+        padding-right: 80px;
+        padding-left: 0px;
+    }
+
+    .card-project {
+        grid-column: span 4;
+    }
+
+}
+/* Header Page */
+
+section {
+    margin: auto;
+    display: flex;
+   
+}
+
+.kolom {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 30px;
+}
+.kolom .deskripsi {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 200px;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    margin-bottom: 20px;
+    width: 100%;
+    line-height: 50px;
+}
+
+.profile {
+    height: 600px;
+    display: flex;
+}
+/* Card */
+.container {
+    padding: 0;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    margin: 5px 15px;
+    gap:20px;
+    position: relative;
+  }
+  
+  .card {
+    width: 100%;
+    height: auto;
+    grid-column: span 8;
+    margin: 10px 0;
+    border-radius: 15px;
+    position: relative;
+    box-shadow: 0 10px 10px rgba(0,0,0,.1);
+    margin-bottom: 310px;
+  
+  }
+  
+  .head-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .body-card {
+    padding: 10px 15px;
+  }
+  
+  .body-card h1 {
+    margin: 0;  
+  
+  }
+  
+  .body-card svg {
+    width: 31px;
+    position: absolute;
+    bottom: 7px;
+    right: 20px;
+  }
+  
+/* About */
+.about-me {
+   width: 100%;
+    height: auto;
+    grid-column: span 8;
+    margin: 10px 0;
+    border-radius: 15px;
+    position: relative;
+    box-shadow: 0 10px 10px rgba(0,0,0,.1);
+    flex-direction: column;
+}
+.headtext-about {
+    text-align: left;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    font-size: 30px;
+    width: 100%;
+}
+.self-description {
+    text-align: left;
+    font-family: sans-serif;
+    font-size: 20px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 25px;
+}
+.about-experience {
+   margin: auto;
+   margin-top: 35px;
+}
+.work-experience {
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+
+.experience-1 {
+   
+    margin-top: 100px;
+    margin-left: -100px;
+    margin-bottom: 100px;
+}
+.Posisi-jabatan {
+    margin-right: 200px;
+}
+.status {
+    border-radius: 10px;
+    background-color: rgb(0, 255, 0);
+    width: auto;
+    color: rgb(0, 93, 37);
+    margin-left: 1300px;
+}
+
+.institusi {
+    margin-right: 200px;
+    color: rgb(172, 172, 172);
+}
+.date {
+    text-align: right;
+     width: auto;
+     color: rgb(180, 180, 180);
+     margin-left: 1100px;
+     margin-right: -50px;
+}
+
+.about-experience {
+    margin: auto;
+    margin-top: 35px;
+ }
+ .experience {
+     font-size: 30px;
+     margin-left: 20px;
+ }
+ 
+ 
+ .experience-1 {
+    
+     margin-top: 100px;
+     margin-left: -100px;
+     margin-bottom: 100px;
+ }
+ .Posisi-jabatan {
+     margin-right: 200px;
+ }
+ .status {
+     border-radius: 100px;
+     background-color: rgb(0, 255, 0);
+     width: auto;
+     color: rgb(0, 93, 37);
+     margin-left: 1325px;
+     margin-right: 150px;
+     padding-right: 10px;
+     text-align: center;
+ }
+ .status {
+    border-radius: 100px;
+    background-color: rgb(0, 255, 0);
+    width: auto;
+    color: rgb(0, 93, 37);
+    margin-left: 1280px;
+    margin-right: 110px;
+    padding-right: 15px;
+    padding-left: 15px;
+    text-align: center;
+}
+ .institusi {
+     margin-right: 200px;
+     color: rgb(172, 172, 172);
+ }
+ .date {
+    text-align: right;
+     width: auto;
+     color: rgb(180, 180, 180);
+     margin-left: 100px;
+     margin-right: 100px;
+ }
+
+footer{
+    background: black;
+    height: auto;
+    width: 150vw;
+    font-family: "Open Sans";
+    color: white;
+}
+
+.footer-bottom {
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+}
